@@ -1,0 +1,47 @@
+{
+  "name": "angular-geo-maplocation",
+  "version": "0.0.1",
+  "description": "angular-geo-maplocation",
+  "keywords": [
+    "angular"
+  ],
+  "homepage": "https://github.com/stavinski/angular-geo-maplocation",
+  "bugs": "https://github.com/stavinski/angular-geo-maplocation/issues",
+  "author": {
+    "name": "Mike Cromwell",
+    "email": "stavinski_2000@yahoo.com",
+    "url": "https://github.com/stavinski"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stavinski/angular-geo-maplocation.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "connect-livereload": "*",
+    "grunt": "*",
+    "grunt-bump": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-karma": "*",
+    "grunt-ngmin": "*",
+    "grunt-open": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-jasmine": "^0.2.2",
+    "karma-phantomjs-launcher": "*",
+    "karma-requirejs": "~0.2.0",
+    "karma-script-launcher": "*",
+    "matchdep": "*",
+    "requirejs": "*"
+  }
+}
