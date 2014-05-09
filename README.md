@@ -2,15 +2,16 @@
 
 ## Getting Started
 
-Download the [production version][min] or the [development version][max].
+install [bower](http://bower.io/) if you don't already have it installed then run the following from the command line:
 
-[min]: https://raw.github.com/stavinski/jquery-angular-geo-maplocation/master/dist/angular-angular-geo-maplocation.min.js
-[max]: https://raw.github.com/stavinski/jquery-angular-geo-maplocation/master/dist/angular-angular-geo-maplocation.js
+```
+bower install angular-geo-maplocation
+```
 
-In your web page:
+This will add the necessary js files to your bower components directory (usually bower_components), if you already have a build script in place that automatically references bower packages then you can skip to the module declaration otherwise you can add the following underneath your angular script element: 
 
 ```html
-<script src="dist/angular-geo-maplocation.min.js"></script>
+<script src="[bower component directory]/dist/angular-geo-maplocation.min.js"></script>
 ```
 In your module declaration:
 
