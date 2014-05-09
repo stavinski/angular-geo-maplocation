@@ -27,13 +27,9 @@ describe('Module: angular-geo-maplocation', function () {
           longitude: -0.1276250
         },
         zoom: 10,
-        tooltip: 'marker title',
-        start: {
-          latitude: 51.1788820,
-          longitude: -1.8262150
-        }
+        tooltip: 'marker title'
       },
-      element: '<geo-maplocation coords="coords" start="start" zoom="zoom" tooltip="tooltip"></geo-maplocation>'
+      element: '<geo-maplocation coords="coords" zoom="zoom" tooltip="tooltip"></geo-maplocation>'
     }
   };
 
@@ -56,15 +52,7 @@ describe('Module: angular-geo-maplocation', function () {
       var elm = compileDirective();
       expect(elm.isolateScope().map.zoom).toEqual(10);
     });
-    
-    it('should set start on scope from attr', function () {
-      var elm = compileDirective();
-      expect(elm.isolateScope().map.start).toEqual({
-          latitude: 51.1788820,
-          longitude: -1.8262150
-        });
-    });
-    
+        
     it('should create google-map element', function () {
       var elm = compileDirective();
       expect(elm.find('google-map').length).toEqual(1);

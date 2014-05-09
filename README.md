@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-install [bower](http://bower.io/) if you don't already have it installed then run the following from the command line:
+Install [bower](http://bower.io/) if you don't already have it installed then run the following from the command line:
 
 ```
 bower install angular-geo-maplocation
@@ -29,7 +29,7 @@ The directive uses isolated scope to prevent it from polluting the parent scope 
 
 In controller:
 
-```js
+```javascript
 $scope.location = {
   latitude: 51.5033630,
   longitude: -0.1276250
@@ -40,3 +40,30 @@ In template:
 ```html
 <geo-maplocation coords="location"></geo-maplocation>
 ```
+
+## Attributes
+
+### coords
+
+**Required**
+
+```javascript
+{
+  latitude: 51.5033630,
+  longitude: -0.1276250
+}
+```
+
+Specifies the expression that will be bound to the marker, this is 2 way bounded to allow changes to be reflected in either direction
+
+### zoom
+
+**optional**
+
+Is a numeric value to control at what the level the map is zoomed in at.
+
+### tooltip
+
+**optional**
+
+This is the content that will be displayed when the mouse is hovered over the marker
