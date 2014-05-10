@@ -1,9 +1,9 @@
 {
   "name": "angular-geo-maplocation",
   "main": "dist/angular-geo-maplocation.min.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
-    "angular-google-maps": "latest"
+    "angular-google-maps": "1.0.x"
   },
   "devDependencies": {
     "angular": "latest",
