@@ -3,6 +3,7 @@ angular.module('angular-geo-maplocation', ['google-maps']).directive('geoMaploca
   return {
     restrict: 'E',
     scope: {
+      start: '=',
       coords: '=',
       zoom: '=?',
       tooltip: '=?'
@@ -16,7 +17,8 @@ angular.module('angular-geo-maplocation', ['google-maps']).directive('geoMaploca
         }
         $scope.map = {
           zoom: $scope.zoom || 8,
-          options: { streetViewControl: false }
+          options: { streetViewControl: false },
+          start: $scope.start
         };
         $scope.marker = {
           options: {
@@ -32,9 +34,6 @@ angular.module('angular-geo-maplocation', ['google-maps']).directive('geoMaploca
             }
           }
         };
-        $scope.$watch('coords', function () {
-          $scope.map.start = $scope.coords;
-        });
       }
     ]
   };

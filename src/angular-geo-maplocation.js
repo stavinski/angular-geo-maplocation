@@ -7,6 +7,7 @@ angular.module('angular-geo-maplocation', ['google-maps'])
     return {
       restrict: 'E',
       scope: {
+        start: '=',
         coords: '=',
         zoom: '=?',
         tooltip: '=?'
@@ -21,7 +22,8 @@ angular.module('angular-geo-maplocation', ['google-maps'])
           zoom: $scope.zoom || 8,
           options: {
             streetViewControl: false
-          }
+          },
+          start: $scope.start
         };
         
         $scope.marker = {
@@ -38,10 +40,6 @@ angular.module('angular-geo-maplocation', ['google-maps'])
             }
           }
         };
-        
-        $scope.$watch('coords', function () {
-          $scope.map.start = $scope.coords;
-        });
       }
    ]};
 

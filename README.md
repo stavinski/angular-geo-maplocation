@@ -19,6 +19,15 @@ In your module declaration:
 angular.module('mymodule', ['angular-geo-maplocation']);
 ```
 
+Once this is in place you will need to follow add a reference to underscore (used by angular-google-maps) and google maps:
+
+```html
+<script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+<script src='/path/to/underscore[-min].js'></script>
+```
+
+*The underscore reference may be already brought in via your build script*
+
 ## Documentation
 
 This directive is built on top of the fantastic [angular-google-maps](http://angular-google-maps.org/) library I had a use case were I just wanted to have a map with a single marker representing a geo location that could be moved around a map to enable them to set lat & lon without having to type them in manually, hence this directive was born for this use case.
@@ -56,11 +65,24 @@ In template:
 
 Specifies the expression that will be bound to the marker, this is 2 way bounded to allow changes to be reflected in either direction
 
+### start
+
+**required**
+
+```javascript
+{
+  latitude: 51.5033630,
+  longitude: -0.1276250
+}
+```
+
+Specified the expression that will be where the map is centered and is used when first displaying the map.
+
 ### zoom
 
 **optional**
 
-Is a numeric value to control at what the level the map is zoomed in at.
+Is a numeric value to control at what the level the map is zoomed in at, between 1 and 20.
 
 ### tooltip
 
