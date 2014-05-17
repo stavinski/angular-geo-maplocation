@@ -1,5 +1,7 @@
 # angular-geo-maplocation
 
+[example app](http://stavinski.github.io/angular-map/)
+
 ## Getting Started
 
 Install [bower](http://bower.io/) if you don't already have it installed then run the following from the command line:
